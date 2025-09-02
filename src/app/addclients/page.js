@@ -8,6 +8,10 @@ const addClients = () => {
       method: "post",
       body: JSON.stringify({ name }),
     });
+    response = await response.json();
+    if (response.success) {
+      const { result } = response;
+    }
   };
   return (
     <div>

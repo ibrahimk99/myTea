@@ -1,5 +1,7 @@
 import common from "../public/styles/common.module.css";
 import styles from "./header.module.css";
+import Link from "next/link";
+
 const Header = () => {
   return (
     <div className={`${styles.header}`}>
@@ -10,7 +12,9 @@ const Header = () => {
           <li className={`${common.li}`}>Payment Record</li>
           <li className={`${common.li}`}>Monthly Report</li>
           <li className={`${common.li}`}>Daily Deduction</li>
-          <li className={`${common.li}`}>Add Clients</li>
+          <li className={`${common.li}`}>
+            <Link href="/addclients">Add Clients</Link>
+          </li>
         </ul>
         <ul className={`${common.flexBetween}`}>
           <li className={`${common.li}`}>login</li>

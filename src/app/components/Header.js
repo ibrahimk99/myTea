@@ -7,7 +7,9 @@ const Header = () => {
     <div className={`${styles.header}`}>
       <div className={`${common.navbar}`}>
         <ul className={`${common.flexBetween}`}>
-          <li className={`${common.li}`}>Customers</li>
+          <li className={`${common.li}`}>
+            <Link href="/clients">Customers</Link>
+          </li>
           <li className={`${common.li}`}>Khata</li>
           <li className={`${common.li}`}>Payment Record</li>
           <li className={`${common.li}`}>Monthly Report</li>
